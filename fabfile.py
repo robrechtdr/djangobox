@@ -32,6 +32,11 @@ def build_pinax_zero(project_name):
     local('django-admin.py startproject --template=https://github.com/'
       'pinax/pinax-project-account/zipball/master %s' % project_name)
 
-def build_single_template(inp, out, project_name, app_name=''):
+def build_single_file(inp, out, project_name, app_name=''):
+    """
+    >>> build_single_file('tools/build_templates/rimururu/rimururu_urls.py',
+    'my_project/my_project/urls.py', my_project)
+    None
+    """
     templater.create_template(inp, outp, {'project_name': project_name,
       'app_name': app_name}) 
