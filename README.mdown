@@ -1,0 +1,35 @@
+Djangobox 
+---------
+A personal Django project builder.
+
+![Djangobox](.misc/djangobox_logo.png)
+
+### Why?
+Have you ever gotten frustrated how much tinkering it takes to just set up a minimal working Django project so you can fiddle with models, forms, templates, views, ... ?
+
+**Djangobox** can let you play around in a very simple in less then 10 seconds.
+
+There are a few starting builds present (`fab -l`), but ultimately you'll want to costumize your own build. Just put your build template in `tools/build_templates`(look at the `benjamin` template example). 
+
+### Setting up Djangobox
+1. Clone this folder somewhere (insert clone command)
+2. `mkvirtualenv djangobox`
+3. `pip install -r requirements.txt`
+
+*note: For using the identical commands install virtualenv with virtualenvwrapper.*
+
+### Running a project...
+#### ...in the Djangobox virtual environment
+1. `fab benjamin:my_project`
+2. `cd my_project && python manage.py runserver`
+
+#### ...in its own virtual environment
+1. fab rimururu:my_project, my_app
+2. deactivate && mkvirtualenv my_project
+3. cd my_project && pip install -r requirements.txt
+4. python manage.py runserver
+
+
+### Automate setting up your own project 
+TODO: Elaborate here.
+
