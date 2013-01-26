@@ -1,24 +1,27 @@
 Djangobox 
----------
+=========
 Play around with the simplest Django project in less than 10 seconds.
 
 ![Djangobox](https://raw.github.com/RobrechtDR/djangobox/master/.misc/djangobox_logo.png)
 
-### Why?
+Why?
+----
 Have you ever gotten frustrated how much tinkering it takes to just set up a minimal working Django project so you can fiddle with models, forms, templates, views, ... ?
 
 **Djangobox** lets you play around with a simple Django project in less then 10 seconds.
 
 There are a few starting builds present (`fab -l`), but ultimately you'll want to costumize your own build. Just put your build template in `tools/build_templates`(look at the `benjamin` template example). 
 
-### Setting up Djangobox
+Setting up Djangobox
+------------------------
 1. `git clone https://github.com/RobrechtDR/djangobox.git`
 2. `mkvirtualenv djangobox`
 3. `pip install -r requirements.txt`
 
 *Note: For using identical commands install [virtualenv](http://www.virtualenv.org/) with [virtualenvwrapper](http://virtualenvwrapper.readthedocs.org/).*
 
-### Running a project...
+Running a project...
+--------------------
 ##### ...in the Djangobox virtual environment
 1. `fab benjamin:my_project`
 2. `cd my_project && python manage.py runserver`
@@ -30,6 +33,7 @@ There are a few starting builds present (`fab -l`), but ultimately you'll want t
 4. `python manage.py runserver`
 
 
-### Make your own build
+Make your own build
+-------------------
 TODO: Elaborate here.
 
