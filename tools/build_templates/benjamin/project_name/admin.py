@@ -1,4 +1,4 @@
 from django.contrib import admin
-import models
+from {{ project_name }}.models import ModelBox
 
-admin.site.register(models.ModelBox)
+admin.site.register(ModelBox)
