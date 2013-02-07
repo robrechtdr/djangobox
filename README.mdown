@@ -24,7 +24,7 @@ Assuming you are still in the djangobox environment, **you can now start buildin
 
 Using Builds
 ------------
-#### Benjamin
+### Benjamin
 
 The simplest Django build. Suited for training Django skills or trying out new Django features.
 
@@ -35,7 +35,7 @@ The simplest Django build. Suited for training Django skills or trying out new D
 2. `cd my_project`  
 3. `python manage.py runserver`  
 
-#### Batsunan
+### Batsunan
 
 The Benjamin build adapted for Heroku deployment.
 
