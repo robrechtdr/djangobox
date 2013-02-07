@@ -18,47 +18,40 @@ Setting up Djangobox
 2. `mkvirtualenv djangobox`
 3. `pip install -r requirements.txt`
 
+Assuming you are still in the djangobox environment, you can now start building.  
 *Note: For using identical commands install [virtualenv](http://www.virtualenv.org/) with [virtualenvwrapper](http://virtualenvwrapper.readthedocs.org/).*
 
-Running a project...
---------------------
-##### ...in the Djangobox virtual environment
-1. `fab build_benjamin:my_project`
-2. `cd my_project && python manage.py runserver`
-
-##### ...in its own virtual environment
-1. `fab build_benjamin:my_project`
-2. `deactivate && mkvirtualenv my_project`
-3. `cd my_project && pip install -r requirements.txt`
-4. `python manage.py runserver`
-
-
-Builds
-------
-##### Benjamin
-The simplest Django build. Suited for training Django skills or trying out new Django features.
+Using Builds
+------------
+#### Benjamin
 
 ![Benjamin](https://raw.github.com/RobrechtDR/djangobox/master/.misc/benjamin.png)
+The simplest Django build. Suited for training Django skills or trying out new Django features.
 
-`python manage.py runserver`
+**Run a development server**
+`fab build_benjamin:my_project`  
+`cd my_project`  
+`python manage.py runserver`  
 
-
-##### Batsunan
-The benjamin build adapted for Heroku deployment.
+#### Batsunan
 
 ![Batsunan](https://raw.github.com/RobrechtDR/djangobox/master/.misc/batsunan.png)
+The Benjamin build adapted for Heroku deployment.
 
 *If you haven't used Heroku before do the three first steps of the [quickstart](https://devcenter.heroku.com/articles/quickstart).*
 
-* The first heroku push/deploy: `fab heroku_setup:heroku_app_name`
-That's enough to put your site on Heroku!! You don't even need to get out of the djangobox virtual environment for this.
-    
-* Pushing to heroku: `heroku_push:"commit message"`
+**Run a production server on Heroku**
+`fab build_batsunan:my_project`  
+`cd my_project`   
+`fab heroku_setup:my_project_herokuapp_name`  
+`fab heroku_push`
 
+**More**  
 * Run a local management command: `fab dev_manage:dbshell`
 
 * Run a production management command: `fab prod_manage:dbshell`
 
+* Push to heroku: `heroku_push:"commit message"`
 
 Make your own build
 -------------------
