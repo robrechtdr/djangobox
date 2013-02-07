@@ -30,7 +30,7 @@ The simplest Django build. Suited for training Django skills or trying out new D
 
 ![Benjamin](https://raw.github.com/RobrechtDR/djangobox/master/.misc/benjamin.png)
 
-**Run a development server** 
+**Run a development server**  
 1. `fab build_benjamin:my_project`  
 2. `cd my_project`  
 3. `python manage.py runserver`  
@@ -43,18 +43,16 @@ The Benjamin build adapted for Heroku deployment.
 
 *If you haven't used Heroku before first do the three first steps of the [quickstart guide](https://devcenter.heroku.com/articles/quickstart).*
 
-**Run a production server on Heroku**
+**Run a production server on Heroku**  
 1. `fab build_batsunan:my_project`  
 2. `cd my_project`   
 3. `fab heroku_setup:my_project_herokuapp_name`  
 4. `fab heroku_push`
 
 **More**  
-* Run a local management command: `fab dev_manage:dbshell`
-
-* Run a production management command: `fab prod_manage:dbshell`
-
-* Push to heroku: `heroku_push:"commit message"`
+* Run a local management command: `fab dev_manage:dbshell`  
+* Run a production management command: `fab prod_manage:dbshell`  
+* Push to heroku: `heroku_push:"commit message"`  
 
 Make your own build
 -------------------
