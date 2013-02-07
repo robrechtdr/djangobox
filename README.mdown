@@ -50,8 +50,8 @@ The Benjamin build adapted for Heroku deployment.
 4. `fab heroku_push`
 
 **More**  
-* Run a local management command: `fab dev_manage:dbshell`  
-* Run a production management command: `fab prod_manage:dbshell`  
+* Run a local management command: `fab manage_dev:dbshell`  
+* Run a production management command: `fab manage_prod:dbshell`  
 * Push to heroku: `heroku_push:"commit message"`  
 
 Make your own build
