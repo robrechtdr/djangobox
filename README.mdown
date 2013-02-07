@@ -1,14 +1,14 @@
 Djangobox (Django 1.4)
 ======================
-Play around with the simplest Django project in less than 10 seconds.
+A tool to run the simplest Django builds in a few seconds.
 
 ![Djangobox](https://raw.github.com/RobrechtDR/djangobox/master/.misc/djangobox_logo.png)
 
-Why?
-----
-Have you ever gotten frustrated how much tinkering it takes to just set up a minimal working Django project so you can fiddle with models, forms, templates, views, ... ?
+Why is it useful?
+----------------
+Have you ever got frustrated how much tinkering it takes to just set up a minimal working Django project so you can play with models, forms, templates, views, ... ?
 
-**Djangobox** lets you play around with a simple Django project in less then 10 seconds.
+**Djangobox** can let you run a server in about 10 seconds.
 
 There are a few starting builds present (`fab -l`), but ultimately you'll want to costumize your own build. Just put your build template in `tools/build_templates`(look at the `benjamin` template example). 
 
@@ -18,33 +18,36 @@ Setting up Djangobox
 2. `mkvirtualenv djangobox`
 3. `pip install -r requirements.txt`
 
-Assuming you are still in the djangobox environment, you can now start building.  
+Assuming you are still in the djangobox environment, **you can now start building!**
+
 *Note: For using identical commands install [virtualenv](http://www.virtualenv.org/) with [virtualenvwrapper](http://virtualenvwrapper.readthedocs.org/).*
 
 Using Builds
 ------------
 #### Benjamin
 
-![Benjamin](https://raw.github.com/RobrechtDR/djangobox/master/.misc/benjamin.png)
 The simplest Django build. Suited for training Django skills or trying out new Django features.
 
-**Run a development server**
-`fab build_benjamin:my_project`  
-`cd my_project`  
-`python manage.py runserver`  
+![Benjamin](https://raw.github.com/RobrechtDR/djangobox/master/.misc/benjamin.png)
+
+**Run a development server** 
+1. `fab build_benjamin:my_project`  
+2. `cd my_project`  
+3. `python manage.py runserver`  
 
 #### Batsunan
 
-![Batsunan](https://raw.github.com/RobrechtDR/djangobox/master/.misc/batsunan.png)
 The Benjamin build adapted for Heroku deployment.
 
-*If you haven't used Heroku before do the three first steps of the [quickstart](https://devcenter.heroku.com/articles/quickstart).*
+![Batsunan](https://raw.github.com/RobrechtDR/djangobox/master/.misc/batsunan.png)
+
+*If you haven't used Heroku before first do the three first steps of the [quickstart guide](https://devcenter.heroku.com/articles/quickstart).*
 
 **Run a production server on Heroku**
-`fab build_batsunan:my_project`  
-`cd my_project`   
-`fab heroku_setup:my_project_herokuapp_name`  
-`fab heroku_push`
+1. `fab build_batsunan:my_project`  
+2. `cd my_project`   
+3. `fab heroku_setup:my_project_herokuapp_name`  
+4. `fab heroku_push`
 
 **More**  
 * Run a local management command: `fab dev_manage:dbshell`
