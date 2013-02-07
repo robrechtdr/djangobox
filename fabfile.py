@@ -8,6 +8,12 @@ def build_benjamin(project_name):
     local('django-admin.py startproject --template=tools/'
       'build_templates/benjamin %s' % project_name)
 
+def build_batsunan(project_name):
+    local('django-admin.py startproject --template=tools/'
+      'build_templates/batsunan %s' % project_name)
+    build_single_file(os.path.join(project_name, 'Procfile'), 
+      os.path.join(project_name, 'Procfile'), project_name)
+
 def build_rimururu(project_name, app_name='core'):
     build_pinax_zero(project_name)
     inner_project_path = os.path.join(project_name, project_name)
@@ -33,5 +39,6 @@ def build_pinax_zero(project_name):
       'pinax/pinax-project-account/zipball/master %s' % project_name)
 
 def build_single_file(inp, out, project_name, app_name=''):
-    templater.create_template(inp, outp, {'project_name': project_name,
+    templater.create_template(inp, out, {'project_name': project_name,
       'app_name': app_name}) 
+

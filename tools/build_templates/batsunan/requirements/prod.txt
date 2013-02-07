@@ -1,0 +1,5 @@
+# run 'pip install -r requirements/prod.txt'
+-r common.txt
+psycopg2==2.4.6
+dj-database-url==0.2.1
+gunicorn==0.17.2

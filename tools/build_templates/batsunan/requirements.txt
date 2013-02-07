@@ -1,0 +1,2 @@
+# This file exists solely because Heroku executes only this requirements file.
+-r requirements/prod.txt
