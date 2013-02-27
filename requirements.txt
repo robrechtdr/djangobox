@@ -2,4 +2,7 @@ Django==1.4.3
 Fabric==1.5.2
 paramiko==1.9.0
 pycrypto==2.6
+ipython
+ipdb
+django-extensions
 wsgiref==0.1.2

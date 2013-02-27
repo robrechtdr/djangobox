@@ -26,7 +26,7 @@ Using Builds
 ------------
 ### Benjamin
 
-The simplest Django build. Suited for training Django skills or trying out new Django features.
+The simplest Django build. Suited for training your Django skills or trying out new Django features.
 
 ![Benjamin](https://raw.github.com/RobrechtDR/djangobox/master/.misc/benjamin.png)
 
