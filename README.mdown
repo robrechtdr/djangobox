@@ -1,4 +1,4 @@
-Djangobox (Django 1.4)
+Djangobox (Django >= 1.4)
 ======================
 A tool to run the simplest Django builds in a few seconds.
 
