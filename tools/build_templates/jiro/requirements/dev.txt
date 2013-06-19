@@ -1,0 +1,6 @@
+# run 'pip install -r requirements/prod.txt'
+-r common.txt
+ipython
+ipdb
+django-extensions
+Werkzeug

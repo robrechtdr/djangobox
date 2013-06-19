@@ -14,6 +14,12 @@ def build_batsunan(project_name):
     build_single_file(os.path.join(project_name, 'Procfile'), 
       os.path.join(project_name, 'Procfile'), project_name)
 
+def build_jiro(project_name):
+    local('django-admin.py startproject --template=tools/'
+      'build_templates/jiro %s' % project_name)
+    build_single_file(os.path.join(project_name, 'Procfile'), 
+      os.path.join(project_name, 'Procfile'), project_name)
+
 def build_rimururu(project_name, app_name='core'):
     build_pinax_zero(project_name)
     inner_project_path = os.path.join(project_name, project_name)
