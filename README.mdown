@@ -10,7 +10,7 @@ Have you ever got frustrated how much tinkering it takes to just set up a minima
 
 **Djangobox** can let you run a server in about 10 seconds.
 
-There are a few starting builds present (`fab -l`), but ultimately you'll want to costumize your own build. Just put your build template in `tools/build_templates`(look at the `benjamin` template example). 
+There are a few starting builds present (`fab -l`), but ultimately you'll want to costumize your own build. Just put your build template in `tools/build_templates`(look at the `benjamin` template example). After running the build command your project will be in the autocreated box directory. 
 
 Setting up Djangobox
 ------------------------
@@ -32,7 +32,7 @@ The simplest Django build. Suited for training your Django skills or trying out 
 
 **Run a development server**  
 1. `fab build_benjamin:my_project`  
-2. `cd my_project`  
+2. `cd box/my_project`  
 3. `python manage.py runserver`  
 
 ### Batsunan
@@ -45,7 +45,7 @@ The Benjamin build adapted for Heroku deployment.
 
 **Run a production server on Heroku**  
 1. `fab build_batsunan:my_project`  
-2. `cd my_project`   
+2. `cd box/my_project`   
 3. `fab heroku_setup:my_project_herokuapp_name`  
 4. `fab heroku_push`
 
@@ -56,5 +56,5 @@ The Benjamin build adapted for Heroku deployment.
 
 Make your own build
 -------------------
-TODO: Elaborate here.
+TODO: Elaborate here. For now just look at `fabfile.py` and `tools/build_templates/benjamin` as an example.
 

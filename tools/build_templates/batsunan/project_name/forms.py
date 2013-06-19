@@ -1,9 +1,9 @@
-from django.forms import Form, ModelForm
-from models import Search
+from django import forms
+from models import ModelBox
 
-class BoxModelForm(ModelForm):
+class ModelBoxForm(forms.ModelForm):
     class Meta:
-        model = BoxModel
+        model = ModelBox
 
 class CommentForm(forms.Form):
     comment = forms.CharField()

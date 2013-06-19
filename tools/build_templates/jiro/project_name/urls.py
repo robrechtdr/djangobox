@@ -4,6 +4,6 @@ admin.autodiscover()
 from apps.core.views import viewbox
 
 urlpatterns = patterns('',
-    url(r'^$', '{{ project_name }}.views.viewbox'),
-    url(r'^admin/', include(admin.site.urls)),
+    url(regex=r'^$', view=viewbox, name="viewbox"),
+    url(regex=r'^admin/', view=include(admin.site.urls), name="admin"),
 )
