@@ -28,8 +28,23 @@ def build_batsunan(project_name):
 
 
 def build_jiro(project_name):
+    """
+    e.g. build_jiro:my_project
+    """
     local('django-admin.py startproject --template=tools/'
       'build_templates/jiro %s' % project_name)
+    build_single_file(os.path.join(project_name, 'Procfile'),
+      os.path.join(project_name, 'Procfile'), project_name)
+    safe_create_box_dir()
+    local('mv %s box/%s' % (project_name, project_name))
+
+
+def build_jiro_style(build, project_name):
+    """
+    e.g. build_jiro_style:private_sakka,my_project
+    """
+    local('django-admin.py startproject --template=tools/'
+      'build_templates/%s %s' % (build, project_name))
     build_single_file(os.path.join(project_name, 'Procfile'),
       os.path.join(project_name, 'Procfile'), project_name)
     safe_create_box_dir()

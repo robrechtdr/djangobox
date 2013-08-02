@@ -2,6 +2,7 @@ Django==1.4.3
 Fabric==1.5.2
 paramiko==1.9.0
 pycrypto==2.6
+jinja2>=2.7
 ipython
 ipdb
 django-extensions
