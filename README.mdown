@@ -8,7 +8,7 @@ Why is it useful?
 ----------------
 Have you ever got frustrated how much tinkering it takes to just set up a minimal working Django project so you can play with models, forms, templates, views, ... ?
 
-**Djangobox** can let you run your project tinker ready in about 10 seconds.
+With **Djangobox** you can get a Django project running in about 10 seconds.
 
 There are a few starting builds present (`fab -l`), but ultimately you'll want to costumize your own build. Just put your build template in `tools/build_templates`(look at the `benjamin` template example). After running the build command your project will be in the autocreated box directory. 
 
