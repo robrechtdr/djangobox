@@ -63,6 +63,12 @@ Also has Heroku integration.
 
 ![Jiro](https://raw.github.com/RobrechtDR/djangobox/master/.misc/jiro.png)
 
+**Run a development server**
+1. `fab build_jiro:my_project`  
+2. `cd box/my_project`   
+3. `fab manage_dev:runserver`  
+
+
 Make your own build
 -------------------
 TODO: Elaborate here. For now just look at `fabfile.py` and `tools/build_templates/benjamin` as an example.
