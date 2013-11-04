@@ -24,9 +24,11 @@ Assuming you are still in the djangobox environment, **you can now start buildin
 
 Using Builds
 ------------
+
+
 ### Benjamin
 
-The simplest Django build. Suited for training your Django skills or trying out new Django features.
+The simplest Django build. Suited for Django beginners to quickly experiment with a project.
 
 ![Benjamin](https://raw.github.com/RobrechtDR/djangobox/master/.misc/benjamin.png)
 
@@ -48,6 +50,11 @@ The Benjamin build adapted for Heroku deployment.
 2. `cd box/my_project`   
 3. `fab heroku_setup:my_project_herokuapp_name`  
 4. `fab heroku_push`
+
+### Jiro
+
+Use this if you want to do more than just experimenting in Django; if you plan on using multiple apps.
+Also has Heroku integration.
 
 **More**  
 * Run a local management command: `fab manage_dev:dbshell`  
