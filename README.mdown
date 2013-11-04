@@ -63,7 +63,7 @@ Also has Heroku integration.
 
 ![Jiro](https://raw.github.com/RobrechtDR/djangobox/master/.misc/jiro.png)
 
-**Run a development server**
+**Run a development server**     
 1. `fab build_jiro:my_project`  
 2. `cd box/my_project`   
 3. `fab manage_dev:runserver`  
