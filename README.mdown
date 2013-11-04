@@ -61,6 +61,7 @@ The Benjamin build adapted for Heroku deployment.
 Use this if you want to do more than just experimenting in Django; if you plan on using multiple apps.
 Also has Heroku integration.
 
+![Jiro](https://raw.github.com/RobrechtDR/djangobox/master/.misc/jiro.png)
 
 Make your own build
 -------------------
