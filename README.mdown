@@ -15,8 +15,9 @@ There are a few starting builds present (`fab -l`), but ultimately you'll want t
 Setting up Djangobox
 ------------------------
 1. `git clone https://github.com/RobrechtDR/djangobox.git`
-2. `mkvirtualenv djangobox`
-3. `pip install -r requirements.txt`
+2. `cd djangobox`
+3. `mkvirtualenv djangobox`
+4. `pip install -r requirements.txt`
 
 Assuming you are still in the djangobox environment, **you can now start building!**
 
