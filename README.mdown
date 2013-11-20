@@ -49,7 +49,7 @@ The Benjamin build adapted for Heroku deployment.
 **Run a production server on Heroku**  
 1. `fab build_batsunan:my_project`  
 2. `cd box/my_project`   
-3. `fab heroku_setup:my_project_herokuapp_name`  
+3. `fab heroku_setup:my-project-herokuapp-name`  
 4. `fab heroku_push`
 
 **More**  
