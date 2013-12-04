@@ -18,6 +18,7 @@ def heroku_setup(heroku_app_name):
     """
     e.g. heroku_setup:my_heroku_app_name
     """
+    #local("git flow init -d") # For git flow users
     local("git init")
     local("git add .")
     try:
