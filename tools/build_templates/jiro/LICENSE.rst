@@ -1,0 +1,4 @@
+License
+-------
+
+Edit on first release.
