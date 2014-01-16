@@ -1,11 +1,11 @@
-    Djangobox's usefulness has declined since Django 1.6 because it's `startproject` 
-    command now has a default database set up. It's useful for people who...
+> Djangobox's usefulness has declined since Django 1.6 because it's `startproject`
+  command now has a default database set up. It's useful for people who...
 
-    * ... have never used Django before (`Benjamin` build).
-    * ... have never set up Django with Heroku before (`Batsunan` and `jiro` build).
-    * ... want an alternative way to create Django projects 
+> * ... have never used Django before (`Benjamin` build).
+> * ... have never set up Django with Heroku before (`Batsunan` and `jiro` build).
+> * ... want an alternative way to create Django projects.
 
-   If you want to create a serious project have a look at a Django skeleton like [django-twoscoops-project](https://github.com/twoscoops/django-twoscoops-project).
+> If you want to create a serious project have a look at a Django skeleton like [django-twoscoops-project](https://github.com/twoscoops/django-twoscoops-project).
 
 
 Djangobox (Django >= 1.4)
