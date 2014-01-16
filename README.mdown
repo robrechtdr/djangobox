@@ -1,3 +1,5 @@
+> **Note about usage**
+
 > Djangobox's usefulness has declined since Django 1.6 because it's `startproject`
   command now has a default database set up. It's useful for people who...
 
