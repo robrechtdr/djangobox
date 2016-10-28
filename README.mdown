@@ -10,7 +10,7 @@
 > If you want to create a serious project have a look at a Django skeleton like [django-twoscoops-project](https://github.com/twoscoops/django-twoscoops-project).
 
 
-Djangobox (Django >= 1.4)
+Djangobox (Deprecated, last tested on Django 1.6)
 ======================
 A tool to run the simplest Django builds in a few seconds.
 
